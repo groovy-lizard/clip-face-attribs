@@ -1,0 +1,1 @@
+"""OpenCLIP classifier module"""
