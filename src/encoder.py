@@ -64,6 +64,7 @@ class CLIPEncoder():
             image_features = self.encode_image(impath)
             torch.save(image_features, f"{outfolder}/{imname}.npy")
 
-    def load_embeddings(self, emb_path):
+    @classmethod
+    def load_embeddings(cls, emb_path):
         """Load embeddings given path"""
         return torch.load(emb_path)
